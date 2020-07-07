@@ -1,0 +1,5 @@
+<launch>
+ <!-- run subscriber.py from my_pack -->
+ <node pkg="my_pack" type="subscriber.py" name="Topic_subscriber"  output="screen">
+ </node>
+</launch>

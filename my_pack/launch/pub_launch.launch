@@ -1,0 +1,5 @@
+<launch>
+ <!-- run publisher_node.py from my_pack -->
+ <node pkg="my_pack" type="publisher_node.py" name="Topic_publisher"  output="screen">
+ </node>
+</launch>
