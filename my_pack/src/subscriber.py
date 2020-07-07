@@ -8,9 +8,9 @@ def callback(msg):                                    # Define a function called
 
   print msg.data                                      # Print the value 'data' inside the 'msg' parameter
 
-rospy.init_node('Topic_subscriber')                   # Initiate a Node called 'topic_subscriber'
+rospy.init_node('Topic_subscriber')                   # Initiate a Node called 'Topic_subscriber'
 
-sub = rospy.Subscriber('/message', String, callback)   # Create a Subscriber object that will listen to the /counter
+sub = rospy.Subscriber('/message', String, callback)   # Create a Subscriber object that will listen to the /message
                                                       # topic and will cal the 'callback' function each time it reads
                                                       # something from the topic
 rospy.spin()                                          # Create a loop that will keep the program in execution
